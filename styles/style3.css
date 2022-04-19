@@ -6,6 +6,7 @@
     font-display: swap;
 }
 
+
 @font-face {
     font-family: 'TT Lakes Regular';
     src: url('../fonts/TTLakes-Regular.woff');
@@ -66,7 +67,9 @@ body {
     display: flex;
     flex-basis: 240px;
     justify-content: space-between;
+    align-items: center;
     min-width: 240px;
+    height: auto;
     padding: 20px 0 20px 16px;
     margin: 16px 8px;
     background-color: #fff;
@@ -76,6 +79,13 @@ body {
     -moz-border-radius: 6px;
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
+}
+.slider__logo {
+    transform:scale(1)    ;
+    -webkit-transform:scale(1)    ;
+    -moz-transform:scale(1)    ;
+    -ms-transform:scale(1)    ;
+    -o-transform:scale(1)    ;
 }
 
 .slider__slides {
@@ -162,9 +172,7 @@ body {
         min-width: 224px;
         margin: 0 10px;
     }
-    .slider__oneSlider img {
-        max-width: 50%;
-    }
+    
     .swiper-slide {
         width: auto;
         height: auto;
