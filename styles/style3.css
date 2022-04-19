@@ -57,7 +57,7 @@ body {
 .slider__wrapper {
     display: flex;
     flex-direction: column;
-    overflow: auto;
+    overflow: hidden;
     padding: 16px 0 66px;
     background-color: #F2F2F2;
 }
