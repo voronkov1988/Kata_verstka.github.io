@@ -100,8 +100,6 @@ body {
 .slider__dots {
     display: flex;
     justify-content: center;
-    /* position: absolute; */
-    /* margin-top: 120px; */
     width: 320px;
     margin-left: 50%;
     transform: translateX(-50%);
@@ -137,6 +135,7 @@ body {
     margin: 24px 0 0 24px;
     width: auto;
 }
+
 .open span, .close span {
     margin-left: 30px;
 }
@@ -192,6 +191,10 @@ body {
         display: none;
     }
     
+
+    .open {
+        display: flex;
+    }
     .slider__oneSlider:nth-child(n+7){
         display: none;
     }

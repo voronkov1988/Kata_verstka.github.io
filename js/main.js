@@ -99,3 +99,5 @@ closeButton.addEventListener('click', () => {
 
 
 window.addEventListener('resize', debounce(resizeHandlerSlider, 200))
+
+
