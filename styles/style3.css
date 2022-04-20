@@ -30,7 +30,6 @@ body {
     font-family: 'TT Lakes Regular';
     font-size: 16px;
     line-height: 24px;
-    /* letter-spacing: -0.2px; */
     text-transform: uppercase;
     color: #7E7E82;
     background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
@@ -49,11 +48,22 @@ body {
     width: 40px;
     height: 40px;
     border: 2px solid #FF3E79;
+    transition-duration: .5s;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+}
+.slider__arrow:hover {
+    background-color: rgb(220, 217, 217);
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+    transform: rotate(360deg) scale(1.2);
+    -webkit-transform: rotate(360deg) scale(1.2);
+    -moz-transform: rotate(360deg) scale(1.2);
+    -ms-transform: rotate(360deg) scale(1.2);
+    -o-transform: rotate(360deg) scale(1.2);
 }
 
 .slider__wrapper {
@@ -75,18 +85,12 @@ body {
     margin: 16px 8px;
     background-color: #fff;
     border: 1px solid #EAEAEA;
+    cursor: pointer;
     border-radius: 6px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
-}
-.slider__logo {
-    transform:scale(1)    ;
-    -webkit-transform:scale(1)    ;
-    -moz-transform:scale(1)    ;
-    -ms-transform:scale(1)    ;
-    -o-transform:scale(1)    ;
 }
 
 .slider__slides {
@@ -96,6 +100,7 @@ body {
 .slider__oneSlider a {
     padding-right: 16px;
 }
+
 
 .slider__dots {
     display: flex;
@@ -141,6 +146,7 @@ body {
 }
 .slider__button {
     display: none;
+    cursor: pointer;
 }
 .slider__button img {
     transform: scale(1.3);
