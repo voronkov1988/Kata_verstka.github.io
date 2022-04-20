@@ -23,6 +23,7 @@ body {
     width: 100%;
     font-family: 'TT Lakes Regular';
     box-sizing: border-box;
+    background-color: #F2F2F2;
 }
 
 .slider h2 {
@@ -133,9 +134,11 @@ body {
 .open, .close {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin: 24px 0 0 24px;
-    width: 134px;
+    width: auto;
+}
+.open span, .close span {
+    margin-left: 30px;
 }
 .slider__button {
     display: none;
@@ -189,10 +192,6 @@ body {
         display: none;
     }
     
-
-    .open {
-        display: flex;
-    }
     .slider__oneSlider:nth-child(n+7){
         display: none;
     }
