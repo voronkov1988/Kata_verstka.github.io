@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'TT Lakes Medium';
     src: url('../fonts/TTLakes-Medium.woff');
     font-weight: normal;
@@ -11,16 +11,17 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
+} */
 
-body {
+/* body {
     height: auto;
     margin: 0;
     padding: 0;
     font-family: 'TT Lakes Medium';
-}
-.menu{
-    position: absolute;
+} */
+/* .menu{
+    position: fixed;
+    z-index: 1000;
     height: auto;
     width: 320px;
     box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
@@ -39,7 +40,7 @@ a {
 a:first-child {
     margin-top: 34px;
 }
-a:hover::before {
+.menu__main a:hover::before {
     content: "";
     position: absolute;
     width: 4px;
@@ -171,4 +172,4 @@ a:hover::before {
 }
 .menu__languageBlock span:hover {
     color: #7E7E82;
-}
+} */

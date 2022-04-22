@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'TT Lakes Medium';
     src: url('../fonts/TTLakes-Medium.woff');
     font-weight: normal;
@@ -24,9 +24,9 @@ body {
     font-family: 'TT Lakes Regular';
     box-sizing: border-box;
     background-color: #F2F2F2;
-}
+} */
 
-.slider h2 {
+/* .slider h2 {
     font-family: 'TT Lakes Regular';
     font-size: 16px;
     line-height: 24px;
@@ -157,10 +157,10 @@ body {
 }
 .swiper-pagination-bullet-active {
     background-color: #B5B6BC;
-}
+} */
 
 @media(min-width: 768px) {
-    .slider__wrapper {
+    /* .slider__wrapper {
         overflow: hidden;
     }
 
@@ -203,7 +203,7 @@ body {
     }
     .slider__oneSlider:nth-child(n+7){
         display: none;
-    }
+    } */
 
 }
 
