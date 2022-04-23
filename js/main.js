@@ -1,9 +1,13 @@
 const readButton = document.querySelector('.open')
 const closeButton = document.querySelector('.close')
 const allSlides = document.querySelectorAll('.slider__oneSlider')
-
 const medium = document.querySelectorAll('.slider__oneSlider:nth-child(n+7)')
 const large = document.querySelectorAll('.slider__oneSlider:nth-child(n+9')
+
+const menuOpen = document.querySelector('.menu__open')
+const menuClose = document.querySelector('.menu__close')
+const menu = document.querySelector('.menu')
+
 
 let swiper
 
@@ -100,4 +104,15 @@ closeButton.addEventListener('click', () => {
 
 window.addEventListener('resize', debounce(resizeHandlerSlider, 200))
 
+menuOpen.addEventListener('click', ()=> {
+    menu.classList.add('menu__open')
+})
+menuClose.addEventListener('click', ()=>{
+    menu.classList.remove('menu__open')
+})
 
+document.addEventListener('click', (e) => {
+    if(!e.target.closest('.menu') && !e.target.closest('.menu__open')){
+        menu.classList.remove('menu__open')
+    }
+})
