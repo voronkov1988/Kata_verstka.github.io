@@ -564,8 +564,33 @@ a:first-child {
 .menu__languageBlock span:hover {
     color: #7E7E82;
 }
-
 /* end menu */
+/* tech slider  */
+.slider__tech {
+    display: flex;
+    overflow: hidden;
+    padding: 40px 0;
+    background-color: #F8F8F8;
+}
+.slider__singleTechSlider{
+    position: relative;
+    display: flex;
+    min-width: 240px;
+    height: 160px;
+    margin-left: 16px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+.slider__singleTechSlider h3 {
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+.slider__singleTechSlider .slider__arrow {
+    margin: 100px 0 0 5px ;
+}
+
 
 @media(min-width:768px) {
     body {
@@ -754,12 +779,12 @@ a:first-child {
         margin: 0 0;
         gap: 20px;
         margin-left: 6%;
-        grid-template-columns: 20% 20% 20% 20%;
+        grid-template-columns: 20.5% 20.5% 20.5% 20.5%;
         justify-content: center;
         grid-template-rows: 1fr 1fr;
     }
     .slider h2 {
-        margin-left: 165px;
+        margin-left: 160px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
