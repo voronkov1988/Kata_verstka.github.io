@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
     if (window.screen.width < 768) {
         createSwiper()
         createTechSlider()
+        createPriceSlider()
     }
 });
 
@@ -43,6 +44,7 @@ const resizeHandlerSlider = () => {
     if(document.body.clientWidth < 768){
         createSwiper()
         createTechSlider()
+        createPriceSlider()
         medium.forEach (item => {
             item.style.display = 'flex'
         })
@@ -93,6 +95,15 @@ const createTechSlider = () => {
         slidesPerView: 'auto',
         pagination: {
             el: '.slider__tech_dots',
+            clickable: true,
+        }
+    })
+}
+const createPriceSlider = () => {
+    swiperPrice = new Swiper('.price__slider', {
+        slidesPerView: 'auto',
+        pagination: {
+            el: '.price__dots',
             clickable: true,
         }
     })
