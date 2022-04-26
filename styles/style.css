@@ -229,7 +229,8 @@ h2 {
 }
 
 /* slider */
-.slider h2 {
+.slider h2,
+.price h2 {
     font-family: 'TT Lakes Regular';
     font-size: 16px;
     line-height: 24px;
@@ -316,19 +317,6 @@ h2 {
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
-}
-
-.slider__dot {
-    width: 12px;
-    height: 12px;
-    margin: 0 0 0 12px;
-    cursor: pointer;
-    border-radius: 50%;
-    background-color: #DDDDDD;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
 }
 
 .activeDot {
@@ -490,7 +478,7 @@ a:first-child {
 
 .menu__close {
     position: relative;
-    margin:10px;
+    margin: 10px;
     /* left: -20px; */
 }
 
@@ -564,32 +552,148 @@ a:first-child {
 .menu__languageBlock span:hover {
     color: #7E7E82;
 }
+
 /* end menu */
 /* tech slider  */
 .slider__tech {
-    display: flex;
-    overflow: hidden;
-    padding: 40px 0;
-    background-color: #F8F8F8;
-}
-.slider__singleTechSlider{
     position: relative;
     display: flex;
-    min-width: 240px;
+    flex-direction: column;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: #F8F8F8;
+    padding: 30px 0 60px 0;
+}
+
+.slider__singleTechSlider {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
     height: 160px;
-    margin-left: 16px;
+    margin: 16px 8px;
+    cursor: pointer;
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
     box-sizing: border-box;
     border-radius: 6px;
 }
+
 .slider__singleTechSlider h3 {
     justify-content: flex-start;
-    padding-left: 10px;
+    font-size: 16px;
+    padding-left: 16px;
 }
+
 .slider__singleTechSlider .slider__arrow {
-    margin: 100px 0 0 5px ;
+    margin: 100px 15px 0 5px;
 }
+
+.slider__tech_dots {
+    position: absolute;
+    display: flex;
+    margin-left: 50%;
+    margin-bottom: 30px;
+    transform: translateX(-50%);
+    justify-content: center;
+    z-index: 2;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.dot {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.dot:nth-child(n+2) {
+    margin-left: 5px;
+}
+
+/* end techslider */
+/* priceSlider */
+.price__slider {
+    background-color: #F8F8F8;
+    overflow: auto;
+}
+
+.price__onePrice {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #fff;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.price__oneBlock {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+}
+
+.price__time {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeBlock {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.price__oneBlock_title {
+    color: #7E7E82;
+    font-family: 'TT Lakes Medium';
+    font-size: 14px;
+    line-height: 16px;
+    opacity: 0.72;
+}
+
+.price__descr {
+    font-family: 'TT Lakes Regular';
+    color: #1B1C21;
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+}
+
+.price__onePrice {
+    width: 260px;
+    height: 200px;
+    margin: 8px;
+}
+
+.price__order {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4px 0 4px 12px;
+    background-color: #FF3E79;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 24px;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+
+/* end priceSlider */
 
 
 @media(min-width:768px) {
@@ -648,7 +752,6 @@ a:first-child {
         margin: 0 10px;
         gap: 10px;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
     }
 
     .slider__oneSlider {
@@ -683,6 +786,25 @@ a:first-child {
     }
 
     /* endslider */
+    /* techslider */
+    .slider__tech_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .slider__singleTechSlider:nth-child(n+4) {
+        display: none;
+    }
+
+    .slider__singleTechSlider {
+        margin: 8px 8px;
+    }
+
+    .slider__tech .swiper-slide {
+        height: 100%;
+    }
+
+    /* end techslider */
 }
 
 @media(min-width:1440px) {
@@ -772,7 +894,7 @@ a:first-child {
     }
 
     /* slider */
-    
+
     .slider__slides {
         display: grid;
         min-width: 1120px;
@@ -783,13 +905,14 @@ a:first-child {
         justify-content: center;
         grid-template-rows: 1fr 1fr;
     }
+
     .slider h2 {
         margin-left: 160px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
     }
-   
+
 
     .slider__oneSlider:nth-child(n+7) {
         display: flex;
@@ -798,7 +921,9 @@ a:first-child {
     .slider__oneSlider:nth-child(n+9) {
         display: none;
     }
-    .open, .close {
+
+    .open,
+    .close {
         margin: 24px 0 0 15%
     }
 
@@ -813,7 +938,25 @@ a:first-child {
         -ms-transform: translateX(0%);
         -o-transform: translateX(0%);
     }
-    header, main {
+
+    header,
+    main {
         margin-left: 160px;
+    }
+
+    /* tech slider */
+    .slider__singleTechSlider:nth-child(n+4) {
+        display: flex;
+    }
+
+    .slider__tech_wrapper {
+        display: grid;
+        margin-left: 13%;
+        grid-template-columns: 21.5% 21.5% 21.5% 21.5%;
+    }
+
+    .slider__singleTechSlider {
+        min-width: 224px;
+
     }
 }
