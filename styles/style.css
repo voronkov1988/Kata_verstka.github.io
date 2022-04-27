@@ -769,18 +769,24 @@ a {
     font-size: 14px;
     line-height: 16px;
     mix-blend-mode: normal;
-    opacity: 0.72;
     text-align: center;
 }
 .footer a {
     color: #7E7E82;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    opacity: 0.72;
+}
+.footer span {
+    opacity: 0.72;
 }
 .copyright {
     display: flex;
     flex-direction: column;
 }
 .footer__oneBlock {
-    padding: 0 10px;
+    padding: 10px 10px;
 }
 
 
@@ -991,8 +997,15 @@ a {
     .price__infoBlock {
         background-color: #F8F8F8;
     }
-
     /* end price block */
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 10px 0 10px;
+    }
+    .footer__oneBlock:nth-child(3) {
+        text-align: right;
+    }
 }
 
 @media(min-width:1440px) {
@@ -1121,6 +1134,7 @@ a {
         visibility: visible;
         opacity: 1;
         height: 100vh;
+        box-shadow: none;
         -webkit-transform: translateX(0%);
         -moz-transform: translateX(0%);
         -ms-transform: translateX(0%);
@@ -1161,5 +1175,12 @@ a {
 
     .price h2 {
         margin-left: 140px;
+    }
+    /* footer */
+    .footer {
+        margin-left: 160px;
+    }
+    .footer__oneBlock:nth-child(1) {
+        text-align: left;
     }
 }
