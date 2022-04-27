@@ -102,6 +102,7 @@ h2 {
     display: flex;
     justify-content: flex-end;
     flex-grow: .2;
+    margin-right: 10px;
 }
 
 .header__right :nth-child(1) {
@@ -402,7 +403,7 @@ a {
 }
 
 a:first-child {
-    margin-top: 24px;
+    margin-top: 14px;
 }
 
 .menu__main a:hover::before {
@@ -454,7 +455,7 @@ a:first-child {
     align-items: center;
     cursor: pointer;
     background-color: #FF3E79;
-    margin: 0 0px 0 10px;
+    /* margin: 0 0px 0 10px; */
     transition: .6s;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -620,9 +621,11 @@ a:first-child {
 /* priceSlider */
 .price {
     background-color: #F8F8F8;
+    overflow: hidden;
 }
 .price h2 {
     display: block;
+    width: 100%;
 }
 .price__slider {
     position: relative;
