@@ -12,7 +12,8 @@ const closeButtonTech = document.querySelector('.slider__tech .close')
 const menuOpen = document.querySelector('.menu__open')
 const menuClose = document.querySelector('.menu__close')
 const menu = document.querySelector('.menu')
-
+//read first block
+const mainButtonRead = document.querySelector('.main__buttonRead')
 
 let swiper
 
@@ -170,4 +171,15 @@ closeButtonTech.addEventListener('click', ()=>{
     })
     readButtonTech.style.display = 'flex'
     closeButtonTech.style.display = 'none'
+})
+
+mainButtonRead.addEventListener('click', ()=> {
+    const mainLaptop = document.querySelector('.main__laptop')
+    const mainPc = document.querySelector('.main__pc')
+    let mainRead = document.querySelector('.main__read')
+    console.log(1)
+    mainLaptop.style.display = 'flex'
+    mainPc.style.display = 'flex'
+    mainButtonRead.style.display = 'none'
+    
 })
