@@ -385,6 +385,7 @@ h2 {
     transition-timing-function: ease-in;
     transform: translateX(0%);
     opacity: 1;
+    overflow-y: hidden;
     -webkit-transform: translateX(0%);
     -moz-transform: translateX(0%);
     -ms-transform: translateX(0%);
