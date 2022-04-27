@@ -367,7 +367,7 @@ h2 {
     transition-duration: .3s;
     transition-timing-function: ease-in;
     z-index: 1000;
-    width: 320px;
+    width: 100%;
     transform: translateX(-100%);
     box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
     background-color: #fff;
@@ -397,11 +397,11 @@ a {
     letter-spacing: -0.2px;
     color: #1B1C21;
     padding: 10px 0 0 34px;
-    padding-bottom: 16px;
+    padding-bottom: 10px;
 }
 
 a:first-child {
-    margin-top: 34px;
+    margin-top: 24px;
 }
 
 .menu__main a:hover::before {
@@ -480,14 +480,15 @@ a:first-child {
 .menu__close {
     position: relative;
     margin: 10px;
-    /* left: -20px; */
 }
 
 .menu__topLogo {
     position: relative;
     left: -40px;
 }
-
+.menu__top_search {
+    margin-right: 10px;
+}
 .menu__oneIcon {
     display: flex;
     justify-content: center;
@@ -528,7 +529,7 @@ a:first-child {
 
 .menu__iconsBlock {
     display: flex;
-    margin-top: 80px;
+    margin-top: 10px;
 }
 
 .menu__telephone {
@@ -616,6 +617,12 @@ a:first-child {
 
 /* end techslider */
 /* priceSlider */
+.price {
+    background-color: #F8F8F8;
+}
+.price h2 {
+    display: block;
+}
 .price__slider {
     position: relative;
     background-color: #F8F8F8;
@@ -712,14 +719,47 @@ a:first-child {
     display: none;
 }
 
-
-
+.price__infoBlock {
+    font-family: 'TT Lakes Regular';
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    font-weight: 300;
+    color: #1B1C21;
+    padding: 20px 10px;
+}
+.price__infoBlock_wrapper{
+    width: 80%;
+}
+.price__infoBlock_wrapper a{
+    padding: 0 0 0 0;
+    font-weight: 600;
+}
+.price__infoBlock_wrapper a span::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    margin-top: 6px;
+    width: 15px;
+    height: 15px;
+    background: url('../img/arrowRight.png') center right no-repeat;
+}
 /* end priceSlider */
+/* footer */
+.footer {
+    background-color: #F8F8F8;
+}
 
 
 @media(min-width:768px) {
     body {
         min-width: 768px;
+    }
+    .menu {
+        width: 320px;
+    }
+    .menu__iconsBlock {
+        margin-top: 80px;
     }
 
     .main__infoBlock {
@@ -889,7 +929,6 @@ a:first-child {
         height: 1px;
         background-color: #EAEAEA;
         position: absolute;
-        /* margin-left:9%; */
         z-index: 10;
     }
 
@@ -910,6 +949,9 @@ a:first-child {
         -moz-border-radius: 20px;
         -ms-border-radius: 20px;
         -o-border-radius: 20px;
+    }
+    .price__infoBlock {
+        background-color: #F8F8F8;
     }
     /* end price block */
 }
@@ -1065,5 +1107,17 @@ a:first-child {
     .slider__singleTechSlider {
         min-width: 224px;
 
+    }
+    /* price block */
+    .price__wrapper {
+        width: auto;
+        margin-left: 160px;
+    }
+    .price {
+        background-color: #F8F8F8;
+        padding: 30px 20px;
+    }
+    .price h2 {
+        margin-left: 140px;
     }
 }
