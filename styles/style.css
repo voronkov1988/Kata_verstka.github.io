@@ -403,7 +403,7 @@ a {
     padding-bottom: 10px;
 }
 
-a:first-child {
+.menu a:first-child {
     margin-top: 14px;
 }
 
@@ -489,9 +489,11 @@ a:first-child {
     position: relative;
     left: -40px;
 }
+
 .menu__top_search {
     margin-right: 10px;
 }
+
 .menu__oneIcon {
     display: flex;
     justify-content: center;
@@ -624,10 +626,12 @@ a:first-child {
     background-color: #F8F8F8;
     overflow: hidden;
 }
+
 .price h2 {
     display: block;
     width: 100%;
 }
+
 .price__slider {
     position: relative;
     background-color: #F8F8F8;
@@ -733,13 +737,16 @@ a:first-child {
     color: #1B1C21;
     padding: 20px 10px;
 }
-.price__infoBlock_wrapper{
+
+.price__infoBlock_wrapper {
     width: 80%;
 }
-.price__infoBlock_wrapper a{
+
+.price__infoBlock_wrapper a {
     padding: 0 0 0 0;
     font-weight: 600;
 }
+
 .price__infoBlock_wrapper a span::after {
     content: '';
     display: inline-block;
@@ -749,10 +756,31 @@ a:first-child {
     height: 15px;
     background: url('../img/arrowRight.png') center right no-repeat;
 }
+
 /* end priceSlider */
 /* footer */
-.footer {
+.footer{
+    display: flex;
+    flex-direction: column;
     background-color: #F8F8F8;
+    color: #7E7E82;
+    padding: 40px 0 20px 0;
+    font-family: 'TT Lakes Medium';
+    font-size: 14px;
+    line-height: 16px;
+    mix-blend-mode: normal;
+    opacity: 0.72;
+    text-align: center;
+}
+.footer a {
+    color: #7E7E82;
+}
+.copyright {
+    display: flex;
+    flex-direction: column;
+}
+.footer__oneBlock {
+    padding: 0 10px;
 }
 
 
@@ -760,9 +788,11 @@ a:first-child {
     body {
         min-width: 768px;
     }
+
     .menu {
         width: 320px;
     }
+
     .menu__iconsBlock {
         margin-top: 80px;
     }
@@ -875,9 +905,11 @@ a:first-child {
     .price__slider {
         display: none;
     }
+
     .price h2 {
         display: block;
     }
+
     .price__insetBlock {
         position: relative;
         width: 90%;
@@ -910,7 +942,7 @@ a:first-child {
         -moz-border-radius: 6px;
         -ms-border-radius: 6px;
         -o-border-radius: 6px;
-}
+    }
 
     .price__row {
         display: grid;
@@ -955,9 +987,11 @@ a:first-child {
         -ms-border-radius: 20px;
         -o-border-radius: 20px;
     }
+
     .price__infoBlock {
         background-color: #F8F8F8;
     }
+
     /* end price block */
 }
 
@@ -1113,15 +1147,18 @@ a:first-child {
         min-width: 224px;
 
     }
+
     /* price block */
     .price__wrapper {
         width: auto;
         margin-left: 160px;
     }
+
     .price {
         background-color: #F8F8F8;
         padding: 30px 20px;
     }
+
     .price h2 {
         margin-left: 140px;
     }
