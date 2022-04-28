@@ -1,6 +1,7 @@
 const readButton = document.querySelector('.open')
 const closeButton = document.querySelector('.close')
 const allSlides = document.querySelectorAll('.slider__oneSlider')
+const body = document.querySelector('body')
 
 const medium = document.querySelectorAll('.slider__oneSlider:nth-child(n+7)')
 const large = document.querySelectorAll('.slider__oneSlider:nth-child(n+9')
@@ -150,6 +151,7 @@ window.addEventListener('resize', debounce(resizeHandlerSlider, 200))
 
 menuOpen.addEventListener('click', ()=> {
     menu.classList.add('menu__open')
+    body.style.backdropFilter = 'blur(15px)';
 })
 menuClose.addEventListener('click', ()=>{
     menu.classList.remove('menu__open')
@@ -161,6 +163,9 @@ document.addEventListener('click', (e) => {
     }
     if(!e.target.closest('.modalFeedBack') && !e.target.closest('.menu__oneIcon')){
         modalFeedBack.classList.remove('modalFeedBack__active')
+    }
+    if(!e.target.closest('.modalCall') && !e.target.closest('.menu__oneIcon')){
+        modalCall.classList.remove('modalCall__active')
     }
 })
 
@@ -196,12 +201,21 @@ menuAllIcons.forEach(item => {
 })
 
 const modalFeedBack = document.querySelector('.modalFeedBack')
-const modalFeedBackClose = document.querySelector('.modalFeedBack__close')
+const modalFeedBackClose = document.querySelectorAll('.modal_close')
+const modalCall = document.querySelector('.modalCall')
+const orderCall = document.querySelector('.order_call')
 
 sendMesage.addEventListener('click', () => {
     modalFeedBack.classList.add('modalFeedBack__active')
 
 })
-modalFeedBackClose.addEventListener('click', () => {
-    modalFeedBack.classList.remove('modalFeedBack__active')
+modalFeedBackClose.forEach(item => {
+    item.addEventListener('click', () => {
+        modalFeedBack.classList.remove('modalFeedBack__active')
+    modalCall.classList.remove('modalCall__active')
+    })
+})
+
+orderCall.addEventListener('click', () => {
+    modalCall.classList.add('modalCall__active')
 })
