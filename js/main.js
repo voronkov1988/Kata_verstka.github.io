@@ -14,6 +14,9 @@ const menuClose = document.querySelector('.menu__close')
 const menu = document.querySelector('.menu')
 //read first block
 const mainButtonRead = document.querySelector('.main__buttonRead')
+const sendMesage = document.querySelector('.send_mesage')
+
+const menuAllIcons =document.querySelectorAll('.menu__oneIcon')
 
 let swiper
 
@@ -156,6 +159,10 @@ document.addEventListener('click', (e) => {
     if(!e.target.closest('.menu') && !e.target.closest('.menu__open')){
         menu.classList.remove('menu__open')
     }
+    if(!e.target.closest('.modalFeedBack') && !e.target.closest('.menu__oneIcon')){
+        console.log(2)
+        modalFeedBack.classList.remove('modalFeedBack__active')
+    }
 })
 
 readButtonTech.addEventListener('click', ()=> {
@@ -172,14 +179,30 @@ closeButtonTech.addEventListener('click', ()=>{
     readButtonTech.style.display = 'flex'
     closeButtonTech.style.display = 'none'
 })
-
+//доделать!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 mainButtonRead.addEventListener('click', ()=> {
     const mainLaptop = document.querySelector('.main__laptop')
     const mainPc = document.querySelector('.main__pc')
-    let mainRead = document.querySelector('.main__read')
-    console.log(1)
+
     mainLaptop.style.display = 'flex'
     mainPc.style.display = 'flex'
     mainButtonRead.style.display = 'none'
     
+})
+
+menuAllIcons.forEach(item => {
+    item.addEventListener('click', ()=> {
+        menu.classList.remove('menu__open')
+    })
+})
+
+const modalFeedBack = document.querySelector('.modalFeedBack')
+const modalFeedBackClose = document.querySelector('.modalFeedBack__close')
+
+sendMesage.addEventListener('click', () => {
+    modalFeedBack.classList.add('modalFeedBack__active')
+
+})
+modalFeedBackClose.addEventListener('click', () => {
+    modalFeedBack.classList.remove('modalFeedBack__active')
 })
