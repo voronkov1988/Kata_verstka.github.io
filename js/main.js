@@ -151,7 +151,7 @@ window.addEventListener('resize', debounce(resizeHandlerSlider, 200))
 
 menuOpen.addEventListener('click', ()=> {
     menu.classList.add('menu__open')
-    wrapper.classList.add('body_close');
+    wrapper.classList.add('body_close')
 })
 menuClose.addEventListener('click', ()=>{
     menu.classList.remove('menu__open')
@@ -165,11 +165,9 @@ document.addEventListener('click', (e) => {
     }
     if(!e.target.closest('.modalFeedBack') && !e.target.closest('.menu__oneIcon') && e.target.closest('.wrapper')){
         modalFeedBack.classList.remove('modalFeedBack__active')
-        wrapper.classList.remove('body_close');
     }
     if(!e.target.closest('.modalCall') && !e.target.closest('.menu__oneIcon') && e.target.closest('.wrapper')){
         modalCall.classList.remove('modalCall__active')
-        wrapper.classList.remove('body_close');
     }
 })
 
