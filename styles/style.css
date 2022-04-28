@@ -806,10 +806,10 @@ a {
     width: 100%;
     height: 100vh;
     background-color: #fff;
-    -webkit-transform: translateX(100%);
-    -moz-transform: translateX(100%);
-    -ms-transform: translateX(100%);
-    -o-transform: translateX(100%);
+    -webkit-transform: translateX(200%);
+    -moz-transform: translateX(200%);
+    -ms-transform: translateX(200%);
+    -o-transform: translateX(200%);
 }
 .modalFeedBack__active {
     transform: translateX(0);
@@ -1163,6 +1163,12 @@ textarea:focus {
     .modalFeedBack {
         width: 320px;
     }
+    /* .modalFeddBack */
+    .modalFeedBack__close {
+        position: absolute;
+        margin-left: -50px;
+        margin-top: 20px;
+    }
 }
 
 @media(min-width:1440px) {
@@ -1342,4 +1348,5 @@ textarea:focus {
     .footer__oneBlock:nth-child(1) {
         text-align: left;
     }
+   
 }

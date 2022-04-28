@@ -160,7 +160,6 @@ document.addEventListener('click', (e) => {
         menu.classList.remove('menu__open')
     }
     if(!e.target.closest('.modalFeedBack') && !e.target.closest('.menu__oneIcon')){
-        console.log(2)
         modalFeedBack.classList.remove('modalFeedBack__active')
     }
 })
