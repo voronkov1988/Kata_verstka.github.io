@@ -14,7 +14,7 @@ const menuOpen = document.querySelector('.menu__open')
 const menuClose = document.querySelector('.menu__close')
 const menu = document.querySelector('.menu')
 //read first block
-const mainButtonRead = document.querySelector('.main__buttonRead')
+const mainButtonRead = document.querySelector('.main__buttonRead span')
 const sendMesage = document.querySelector('.send_mesage')
 
 const menuAllIcons =document.querySelectorAll('.menu__oneIcon')
@@ -188,13 +188,20 @@ closeButtonTech.addEventListener('click', ()=>{
     closeButtonTech.style.display = 'none'
 })
 //доделать!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 mainButtonRead.addEventListener('click', ()=> {
     const mainLaptop = document.querySelector('.main__laptop')
     const mainPc = document.querySelector('.main__pc')
-
     mainLaptop.style.display = 'flex'
     mainPc.style.display = 'flex'
-    mainButtonRead.style.display = 'none'
+    if(mainButtonRead.textContent === 'Читать далее'){
+        mainButtonRead.textContent = 'Скрыть'
+    }
+    else {
+        mainLaptop.style.display = 'none'
+        mainPc.style.display = 'none'
+        mainButtonRead.textContent = 'Читать далее'
+    }
     
 })
 
