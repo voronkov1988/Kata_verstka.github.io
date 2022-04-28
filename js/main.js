@@ -1,7 +1,7 @@
 const readButton = document.querySelector('.open')
 const closeButton = document.querySelector('.close')
 const allSlides = document.querySelectorAll('.slider__oneSlider')
-const body = document.querySelector('body')
+const wrapper = document.querySelector('.wrapper')
 
 const medium = document.querySelectorAll('.slider__oneSlider:nth-child(n+7)')
 const large = document.querySelectorAll('.slider__oneSlider:nth-child(n+9')
@@ -151,15 +151,17 @@ window.addEventListener('resize', debounce(resizeHandlerSlider, 200))
 
 menuOpen.addEventListener('click', ()=> {
     menu.classList.add('menu__open')
-    body.style.backdropFilter = 'blur(15px)';
+    wrapper.classList.add('body_close');
 })
 menuClose.addEventListener('click', ()=>{
     menu.classList.remove('menu__open')
+    wrapper.classList.remove('body_close');
 })
 
 document.addEventListener('click', (e) => {
     if(!e.target.closest('.menu') && !e.target.closest('.menu__open')){
         menu.classList.remove('menu__open')
+        wrapper.classList.remove('body_close');
     }
     if(!e.target.closest('.modalFeedBack') && !e.target.closest('.menu__oneIcon')){
         modalFeedBack.classList.remove('modalFeedBack__active')
@@ -197,6 +199,7 @@ mainButtonRead.addEventListener('click', ()=> {
 menuAllIcons.forEach(item => {
     item.addEventListener('click', ()=> {
         menu.classList.remove('menu__open')
+        wrapper.classList.remove('body_close');
     })
 })
 
@@ -207,15 +210,18 @@ const orderCall = document.querySelector('.order_call')
 
 sendMesage.addEventListener('click', () => {
     modalFeedBack.classList.add('modalFeedBack__active')
+    wrapper.classList.add('body_close');
 
 })
 modalFeedBackClose.forEach(item => {
     item.addEventListener('click', () => {
         modalFeedBack.classList.remove('modalFeedBack__active')
-    modalCall.classList.remove('modalCall__active')
+        modalCall.classList.remove('modalCall__active')
+        wrapper.classList.remove('body_close');
     })
 })
 
 orderCall.addEventListener('click', () => {
     modalCall.classList.add('modalCall__active')
+    wrapper.classList.add('body_close');
 })

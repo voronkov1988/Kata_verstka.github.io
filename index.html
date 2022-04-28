@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="body">
     <div class="menu">
         <div class="menu__top">
             <div class="menu__close icon">
@@ -97,440 +97,443 @@
             </form>
         </div>
     </div>
-    <header>
-        <div class="header">
-            <div class="header__left">
-                <div class="header__menu">
-                    <div class="menu__open icon">
-                        <img src="./img/burger.png" alt="menu">
+    <div class="wrapper">
+        <header>
+            <div class="header">
+                <div class="header__left">
+                    <div class="header__menu">
+                        <div class="menu__open icon">
+                            <img src="./img/burger.png" alt="menu">
+                        </div>
+                    </div>
+                    <div class="header__logo">
+                        <img src="./img/logo.png" alt="logo">
                     </div>
                 </div>
-                <div class="header__logo">
-                    <img src="./img/logo.png" alt="logo">
+                <div class="header__right">
+                    <div class="header__icon icon">
+                        <span class="header__active">Оставить заявку</span>
+                        <img src="./img/repair.png" alt="repair">
+                    </div>
+                    <div class="header__icon icon">
+                        <span class="header__active">Статус ремонта</span>
+                        <img class="header__search" src="./img/search.png" alt="search">
+                    </div>
                 </div>
             </div>
-            <div class="header__right">
-                <div class="header__icon icon">
-                    <span class="header__active">Оставить заявку</span>
-                    <img src="./img/repair.png" alt="repair">
+            <main>
+                <div class="main">
+                    <div class="main__top_pc">
+                        <h2>Услуги и сервисы</h2>
+                        <div class="main__info_icons">
+                            <div class="main__icon">
+                                <span>Оставить заявку</span>
+                                <img src="./img/repair.png" alt="repair">
+                            </div>
+                            <div class="main__icon">
+                                <span>Статус ремонта</span>
+                                <img class="header__search" src="./img/search.png" alt="search">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="main__slider">
+                        <div class="main__slideItem main__slideItem_active">Ремонтируемые бренды</div>
+                        <div class="main__slideItem">Ремонтируемые устройства</div>
+                        <div class="main__slideItem">Цены на услуги</div>
+                        <div class="main__slideItem">Адреса сервисных центров</div>
+                        <div class="main__slideItem">Специальные цены</div>
+                    </div>
+                    <div class="main__infoBlock">
+                        <div class="main__subtitle">
+                            <p class="main__p">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только
+                                у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                            <p class="main__p main__laptop">Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                                партнера</p>
+                            <p class="main__p main__pc">что подтверждает большое количество постоянных клиентов. Мы гордимся
+                                тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                            </p>
+                        </div>
+    
+                        <img class="main__img" src="./img/new1.png" alt="">
+                        <div class="main__buttonRead">
+                            <img src="./img/read.png" alt="">
+                            <span class="main__read">Читать далее</span>
+                        </div>
+    
+                    </div>
+    
                 </div>
-                <div class="header__icon icon">
-                    <span class="header__active">Статус ремонта</span>
-                    <img class="header__search" src="./img/search.png" alt="search">
-                </div>
-            </div>
-        </div>
+            </main>
+        </header>
+    
         <main>
-            <div class="main">
-                <div class="main__top_pc">
-                    <h2>Услуги и сервисы</h2>
-                    <div class="main__info_icons">
-                        <div class="main__icon">
-                            <span>Оставить заявку</span>
-                            <img src="./img/repair.png" alt="repair">
+            <!-- start slider -->
+            <div class="slider">
+                <h2>ремонт техники различных брендов</h2>
+                <div class="slider__wrapper">
+                    <div class="swiper-wrapper slider__slides">
+                        <div class="slider__oneSlider swiper-slide">
+                            <img src="./img/lenovo.png" alt="lenovo">
+                            <a href="#">
+                                <div class="slider__arrow">
+                                    <img src="./img/arrowRight.png" alt="">
+                                </div>
+                            </a>
                         </div>
-                        <div class="main__icon">
-                            <span>Статус ремонта</span>
-                            <img class="header__search" src="./img/search.png" alt="search">
+                        <div class="slider__oneSlider swiper-slide">
+                            <img src="./img/sumsung.png" alt="sumsung">
+                            <a href="#">
+                                <div class="slider__arrow">
+                                    <img src="./img/arrowRight.png" alt="">
+                                </div>
+                            </a>
                         </div>
+                        <div class="slider__oneSlider swiper-slide">
+                            <img src="./img/apple.png" alt="sumsung">
+                            <a href="#">
+                                <div class="slider__arrow">
+                                    <img src="./img/arrowRight.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slider__oneSlider swiper-slide">
+                            <img src="./img/ViewSonic.png" alt="sumsung">
+                            <a href="#">
+                                <div class="slider__arrow">
+                                    <img src="./img/arrowRight.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slider__oneSlider swiper-slide">
+                            <img src="./img/bosh.png" alt="sumsung">
+                            <a href="#">
+                                <div class="slider__arrow">
+                                    <img src="./img/arrowRight.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slider__oneSlider swiper-slide">
+                            <img src="./img/hp.png" alt="sumsung">
+                            <a href="#">
+                                <div class="slider__arrow">
+                                    <img src="./img/arrowRight.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slider__oneSlider swiper-slide">
+                            <img src="./img/acer.png" alt="sumsung">
+                            <a href="#">
+                                <div class="slider__arrow">
+                                    <img src="./img/arrowRight.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slider__oneSlider swiper-slide">
+                            <img src="./img/sony.png" alt="sumsung">
+                            <a href="#">
+                                <div class="slider__arrow">
+                                    <img src="./img/arrowRight.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slider__oneSlider swiper-slide">
+                            <img src="./img/lenovo.png" alt="sumsung">
+                            <a href="#">
+                                <div class="slider__arrow">
+                                    <img src="./img/arrowRight.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slider__oneSlider swiper-slide">
+                            <img src="./img/sumsung.png" alt="sumsung">
+                            <a href="#">
+                                <div class="slider__arrow">
+                                    <img src="./img/arrowRight.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slider__oneSlider swiper-slide">
+                            <img src="./img/apple.png" alt="sumsung">
+                            <a href="#">
+                                <div class="slider__arrow">
+                                    <img src="./img/arrowRight.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+    
                     </div>
-                </div>
-
-                <div class="main__slider">
-                    <div class="main__slideItem main__slideItem_active">Ремонтируемые бренды</div>
-                    <div class="main__slideItem">Ремонтируемые устройства</div>
-                    <div class="main__slideItem">Цены на услуги</div>
-                    <div class="main__slideItem">Адреса сервисных центров</div>
-                    <div class="main__slideItem">Специальные цены</div>
-                </div>
-                <div class="main__infoBlock">
-                    <div class="main__subtitle">
-                        <p class="main__p">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только
-                            у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                        <p class="main__p main__laptop">Мы успешно работаем с 1992 года и заслужили репутацию надежного
-                            партнера</p>
-                        <p class="main__p main__pc">что подтверждает большое количество постоянных клиентов. Мы гордимся
-                            тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-                        </p>
-                    </div>
-
-                    <img class="main__img" src="./img/new1.png" alt="">
-                    <div class="main__buttonRead">
+    
+                    <div class="slider__dots"></div>
+                    <div class="slider__button open">
                         <img src="./img/read.png" alt="">
-                        <span class="main__read">Читать далее</span>
+                        <span>Показать все</span>
                     </div>
-
+                    <div class="slider__button close">
+                        <img src="./img/read.png" alt="">
+                        <span>Скрыть</span>
+                    </div>
                 </div>
-
+    
             </div>
+            <!-- end slider -->
+            <!-- tech-slider -->
+            <div class="slider">
+                <h2>Ремонт различных видов техники</h2>
+                <div class="slider__tech">
+                    <div class="swiper-wrapper slider__tech_wrapper">
+                        <div class="slider__singleTechSlider swiper-slide">
+                            <h3>Ремонт ноутбуков</h3>
+                            <div class="slider__arrow">
+                                <img src="./img/arrowRight.png" alt="">
+                            </div>
+                        </div>
+                        <div class="slider__singleTechSlider swiper-slide">
+                            <h3>Ремонт планшетов</h3>
+                            <div class="slider__arrow">
+                                <img src="./img/arrowRight.png" alt="">
+                            </div>
+                        </div>
+                        <div class="slider__singleTechSlider swiper-slide">
+                            <h3>Ремонт ПК</h3>
+                            <div class="slider__arrow">
+                                <img src="./img/arrowRight.png" alt="">
+                            </div>
+                        </div>
+                        <div class="slider__singleTechSlider swiper-slide">
+                            <h3>Ремонт Мониторов</h3>
+                            <div class="slider__arrow">
+                                <img src="./img/arrowRight.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__tech_dots slider__dots swiper-pagination"></div>
+    
+                    <div class="slider__button open tech">
+                        <img src="./img/read.png" alt="">
+                        <span>Показать все</span>
+                    </div>
+                    <div class="slider__button close tech">
+                        <img src="./img/read.png" alt="">
+                        <span>Скрыть</span>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <!-- end tech-slider -->
+            <!-- price blocks -->
+            <div class="price">
+                <h2>Цены на услуги</h2>
+                <div class="price__slider">
+                    <div class="swiper-wrapper">
+    
+                        <div class="price__onePrice swiper-slide">
+                            <div class="price__oneBlock">
+                                <span class="price__oneBlock_title">Ремонтные услуги</span>
+                                <span class="price__descr">Тестирование с выдачей технического заключения</span>
+                            </div>
+                            <div class="price__oneBlock">
+                                <span class="price__oneBlock_title">Цена</span>
+                                <span class="price__descr">Бесплатно</span>
+                            </div>
+                            <div class="price__oneBlock timeBlock">
+                                <div class="price__time">
+                                    <span class="price__oneBlock_title">Срок</span>
+                                    <span class="price__descr">30-120 мин</span>
+                                </div>
+                                <div class="price__order">
+                                    <span>Заказать</span>
+                                    <img src="./img/arrowRight.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="price__onePrice swiper-slide">
+                            <div class="price__oneBlock">
+                                <span class="price__oneBlock_title">Ремонтные услуги</span>
+                                <span class="price__descr">Диагностика</span>
+                            </div>
+                            <div class="price__oneBlock">
+                                <span class="price__oneBlock_title">Цена</span>
+                                <span class="price__descr">Бесплатно</span>
+                            </div>
+                            <div class="price__oneBlock timeBlock">
+                                <div class="price__time">
+                                    <span class="price__oneBlock_title">Срок</span>
+                                    <span class="price__descr">30 мин</span>
+                                </div>
+                                <div class="price__order">
+                                    <span>Заказать</span>
+                                    <img src="./img/arrowRight.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="price__onePrice swiper-slide">
+                            <div class="price__oneBlock">
+                                <span class="price__oneBlock_title">Ремонтные услуги</span>
+                                <span class="price__descr">Замена дисплея</span>
+                            </div>
+                            <div class="price__oneBlock">
+                                <span class="price__oneBlock_title">Цена</span>
+                                <span class="price__descr">1000р</span>
+                            </div>
+                            <div class="price__oneBlock timeBlock">
+                                <div class="price__time">
+                                    <span class="price__oneBlock_title">Срок</span>
+                                    <span class="price__descr">30-120 мин</span>
+                                </div>
+                                <div class="price__order">
+                                    <span>Заказать</span>
+                                    <img src="./img/arrowRight.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="price__onePrice swiper-slide">
+                            <div class="price__oneBlock">
+                                <span class="price__oneBlock_title">Ремонтные услуги</span>
+                                <span class="price__descr">Замена полифонического динамика</span>
+                            </div>
+                            <div class="price__oneBlock">
+                                <span class="price__oneBlock_title">Цена</span>
+                                <span class="price__descr">1000р</span>
+                            </div>
+                            <div class="price__oneBlock timeBlock">
+                                <div class="price__time">
+                                    <span class="price__oneBlock_title">Срок</span>
+                                    <span class="price__descr">30-120 мин</span>
+                                </div>
+                                <div class="price__order">
+                                    <span>Заказать</span>
+                                    <img src="./img/arrowRight.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="price__onePrice swiper-slide">
+                            <div class="price__oneBlock">
+                                <span class="price__oneBlock_title">Ремонтные услуги</span>
+                                <span class="price__descr">Замена программного обеспечения</span>
+                            </div>
+                            <div class="price__oneBlock">
+                                <span class="price__oneBlock_title">Цена</span>
+                                <span class="price__descr">1000р</span>
+                            </div>
+                            <div class="price__oneBlock timeBlock">
+                                <div class="price__time">
+                                    <span class="price__oneBlock_title">Срок</span>
+                                    <span class="price__descr">30-120 мин</span>
+                                </div>
+                                <div class="price__order">
+                                    <span>Заказать</span>
+                                    <img src="./img/arrowRight.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+    
+                       
+                    </div>
+                    <div class="price__dots"></div>
+                </div>
+                <div class="price__wrapper">
+                    <div class="price__table">
+                        <div class="price__row topRow">
+                            <p>Ремонтные услуги</p>
+                            <p>Цена</p>
+                            <p>Срок</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="price__insetBlock">
+                        
+                        <div class="price__table">
+                            <div class="price__row">
+                                <p>Диагностика</p>
+                                <p>Бесплатно</p>
+                                <p>30мин</p>
+                                <div class="price__button">
+                                    <span>Заказать</span>
+                                    <img src="./img/arrowRight.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="price__table">
+                            <div class="price__row">
+                                <p>Замена дисплея</p>
+                                <p>1000р</p>
+                                <p>30-120 мин</p>
+                                <div class="price__button">
+                                    <span>Заказать</span>
+                                    <img src="./img/arrowRight.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="price__table">
+                            <div class="price__row">
+                                <p>Замена полифонического динамика</p>
+                                <p>1000 р</p>
+                                <p>30-120 мин</p>
+                                <div class="price__button">
+                                    <span>Заказать</span>
+                                    <img src="./img/arrowRight.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="price__table">
+                            <div class="price__row">
+                                <p>Тестирование с выдачей технического заключения</p>
+                                <p>1000 р</p>
+                                <p>30-120 мин</p>
+                                <div class="price__button">
+                                    <span>Заказать</span>
+                                    <img src="./img/arrowRight.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="price__table">
+                            <div class="price__row">
+                                <p>Замена программного обеспечяения</p>
+                                <p>1000 р</p>
+                                <p>30-120 мин</p>
+                                <div class="price__button">
+                                    <span>Заказать</span>
+                                    <img src="./img/arrowRight.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price__infoBlock">
+                        <div class="price__infoBlock_wrapper">
+                            <p>Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
+                            <a href="#">
+                                <span>Получить комерческое предложение</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer">
+                    <div class="footer__oneBlock copyright">
+                        <span>&copy; 2019 CPS</span>
+                        <span>Разработано командой Apesong</span>
+                    </div>
+                    <div class="footer__oneBlock"><span>Политика конфиденциальности</span></div>
+                    <div class="footer__oneBlock">
+                        <span>Информация размещенная на данной сьтранице не является публичной афертой</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- end price blocks -->
         </main>
-    </header>
-
-    <main>
-        <!-- start slider -->
-        <div class="slider">
-            <h2>ремонт техники различных брендов</h2>
-            <div class="slider__wrapper">
-                <div class="swiper-wrapper slider__slides">
-                    <div class="slider__oneSlider swiper-slide">
-                        <img src="./img/lenovo.png" alt="lenovo">
-                        <a href="#">
-                            <div class="slider__arrow">
-                                <img src="./img/arrowRight.png" alt="">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slider__oneSlider swiper-slide">
-                        <img src="./img/sumsung.png" alt="sumsung">
-                        <a href="#">
-                            <div class="slider__arrow">
-                                <img src="./img/arrowRight.png" alt="">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slider__oneSlider swiper-slide">
-                        <img src="./img/apple.png" alt="sumsung">
-                        <a href="#">
-                            <div class="slider__arrow">
-                                <img src="./img/arrowRight.png" alt="">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slider__oneSlider swiper-slide">
-                        <img src="./img/ViewSonic.png" alt="sumsung">
-                        <a href="#">
-                            <div class="slider__arrow">
-                                <img src="./img/arrowRight.png" alt="">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slider__oneSlider swiper-slide">
-                        <img src="./img/bosh.png" alt="sumsung">
-                        <a href="#">
-                            <div class="slider__arrow">
-                                <img src="./img/arrowRight.png" alt="">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slider__oneSlider swiper-slide">
-                        <img src="./img/hp.png" alt="sumsung">
-                        <a href="#">
-                            <div class="slider__arrow">
-                                <img src="./img/arrowRight.png" alt="">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slider__oneSlider swiper-slide">
-                        <img src="./img/acer.png" alt="sumsung">
-                        <a href="#">
-                            <div class="slider__arrow">
-                                <img src="./img/arrowRight.png" alt="">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slider__oneSlider swiper-slide">
-                        <img src="./img/sony.png" alt="sumsung">
-                        <a href="#">
-                            <div class="slider__arrow">
-                                <img src="./img/arrowRight.png" alt="">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slider__oneSlider swiper-slide">
-                        <img src="./img/lenovo.png" alt="sumsung">
-                        <a href="#">
-                            <div class="slider__arrow">
-                                <img src="./img/arrowRight.png" alt="">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slider__oneSlider swiper-slide">
-                        <img src="./img/sumsung.png" alt="sumsung">
-                        <a href="#">
-                            <div class="slider__arrow">
-                                <img src="./img/arrowRight.png" alt="">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slider__oneSlider swiper-slide">
-                        <img src="./img/apple.png" alt="sumsung">
-                        <a href="#">
-                            <div class="slider__arrow">
-                                <img src="./img/arrowRight.png" alt="">
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="slider__dots"></div>
-                <div class="slider__button open">
-                    <img src="./img/read.png" alt="">
-                    <span>Показать все</span>
-                </div>
-                <div class="slider__button close">
-                    <img src="./img/read.png" alt="">
-                    <span>Скрыть</span>
-                </div>
-            </div>
-
-        </div>
-        <!-- end slider -->
-        <!-- tech-slider -->
-        <div class="slider">
-            <h2>Ремонт различных видов техники</h2>
-            <div class="slider__tech">
-                <div class="swiper-wrapper slider__tech_wrapper">
-                    <div class="slider__singleTechSlider swiper-slide">
-                        <h3>Ремонт ноутбуков</h3>
-                        <div class="slider__arrow">
-                            <img src="./img/arrowRight.png" alt="">
-                        </div>
-                    </div>
-                    <div class="slider__singleTechSlider swiper-slide">
-                        <h3>Ремонт планшетов</h3>
-                        <div class="slider__arrow">
-                            <img src="./img/arrowRight.png" alt="">
-                        </div>
-                    </div>
-                    <div class="slider__singleTechSlider swiper-slide">
-                        <h3>Ремонт ПК</h3>
-                        <div class="slider__arrow">
-                            <img src="./img/arrowRight.png" alt="">
-                        </div>
-                    </div>
-                    <div class="slider__singleTechSlider swiper-slide">
-                        <h3>Ремонт Мониторов</h3>
-                        <div class="slider__arrow">
-                            <img src="./img/arrowRight.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="slider__tech_dots slider__dots swiper-pagination"></div>
-
-                <div class="slider__button open tech">
-                    <img src="./img/read.png" alt="">
-                    <span>Показать все</span>
-                </div>
-                <div class="slider__button close tech">
-                    <img src="./img/read.png" alt="">
-                    <span>Скрыть</span>
-                </div>
-            </div>
-            
-            
-        </div>
-        <!-- end tech-slider -->
-        <!-- price blocks -->
-        <div class="price">
-            <h2>Цены на услуги</h2>
-            <div class="price__slider">
-                <div class="swiper-wrapper">
-
-                    <div class="price__onePrice swiper-slide">
-                        <div class="price__oneBlock">
-                            <span class="price__oneBlock_title">Ремонтные услуги</span>
-                            <span class="price__descr">Тестирование с выдачей технического заключения</span>
-                        </div>
-                        <div class="price__oneBlock">
-                            <span class="price__oneBlock_title">Цена</span>
-                            <span class="price__descr">Бесплатно</span>
-                        </div>
-                        <div class="price__oneBlock timeBlock">
-                            <div class="price__time">
-                                <span class="price__oneBlock_title">Срок</span>
-                                <span class="price__descr">30-120 мин</span>
-                            </div>
-                            <div class="price__order">
-                                <span>Заказать</span>
-                                <img src="./img/arrowRight.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="price__onePrice swiper-slide">
-                        <div class="price__oneBlock">
-                            <span class="price__oneBlock_title">Ремонтные услуги</span>
-                            <span class="price__descr">Диагностика</span>
-                        </div>
-                        <div class="price__oneBlock">
-                            <span class="price__oneBlock_title">Цена</span>
-                            <span class="price__descr">Бесплатно</span>
-                        </div>
-                        <div class="price__oneBlock timeBlock">
-                            <div class="price__time">
-                                <span class="price__oneBlock_title">Срок</span>
-                                <span class="price__descr">30 мин</span>
-                            </div>
-                            <div class="price__order">
-                                <span>Заказать</span>
-                                <img src="./img/arrowRight.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="price__onePrice swiper-slide">
-                        <div class="price__oneBlock">
-                            <span class="price__oneBlock_title">Ремонтные услуги</span>
-                            <span class="price__descr">Замена дисплея</span>
-                        </div>
-                        <div class="price__oneBlock">
-                            <span class="price__oneBlock_title">Цена</span>
-                            <span class="price__descr">1000р</span>
-                        </div>
-                        <div class="price__oneBlock timeBlock">
-                            <div class="price__time">
-                                <span class="price__oneBlock_title">Срок</span>
-                                <span class="price__descr">30-120 мин</span>
-                            </div>
-                            <div class="price__order">
-                                <span>Заказать</span>
-                                <img src="./img/arrowRight.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="price__onePrice swiper-slide">
-                        <div class="price__oneBlock">
-                            <span class="price__oneBlock_title">Ремонтные услуги</span>
-                            <span class="price__descr">Замена полифонического динамика</span>
-                        </div>
-                        <div class="price__oneBlock">
-                            <span class="price__oneBlock_title">Цена</span>
-                            <span class="price__descr">1000р</span>
-                        </div>
-                        <div class="price__oneBlock timeBlock">
-                            <div class="price__time">
-                                <span class="price__oneBlock_title">Срок</span>
-                                <span class="price__descr">30-120 мин</span>
-                            </div>
-                            <div class="price__order">
-                                <span>Заказать</span>
-                                <img src="./img/arrowRight.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="price__onePrice swiper-slide">
-                        <div class="price__oneBlock">
-                            <span class="price__oneBlock_title">Ремонтные услуги</span>
-                            <span class="price__descr">Замена программного обеспечения</span>
-                        </div>
-                        <div class="price__oneBlock">
-                            <span class="price__oneBlock_title">Цена</span>
-                            <span class="price__descr">1000р</span>
-                        </div>
-                        <div class="price__oneBlock timeBlock">
-                            <div class="price__time">
-                                <span class="price__oneBlock_title">Срок</span>
-                                <span class="price__descr">30-120 мин</span>
-                            </div>
-                            <div class="price__order">
-                                <span>Заказать</span>
-                                <img src="./img/arrowRight.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                   
-                </div>
-                <div class="price__dots"></div>
-            </div>
-            <div class="price__wrapper">
-                <div class="price__table">
-                    <div class="price__row topRow">
-                        <p>Ремонтные услуги</p>
-                        <p>Цена</p>
-                        <p>Срок</p>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="price__insetBlock">
-                    
-                    <div class="price__table">
-                        <div class="price__row">
-                            <p>Диагностика</p>
-                            <p>Бесплатно</p>
-                            <p>30мин</p>
-                            <div class="price__button">
-                                <span>Заказать</span>
-                                <img src="./img/arrowRight.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="line"></div>
-                    <div class="price__table">
-                        <div class="price__row">
-                            <p>Замена дисплея</p>
-                            <p>1000р</p>
-                            <p>30-120 мин</p>
-                            <div class="price__button">
-                                <span>Заказать</span>
-                                <img src="./img/arrowRight.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="line"></div>
-                    <div class="price__table">
-                        <div class="price__row">
-                            <p>Замена полифонического динамика</p>
-                            <p>1000 р</p>
-                            <p>30-120 мин</p>
-                            <div class="price__button">
-                                <span>Заказать</span>
-                                <img src="./img/arrowRight.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="line"></div>
-                    <div class="price__table">
-                        <div class="price__row">
-                            <p>Тестирование с выдачей технического заключения</p>
-                            <p>1000 р</p>
-                            <p>30-120 мин</p>
-                            <div class="price__button">
-                                <span>Заказать</span>
-                                <img src="./img/arrowRight.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="line"></div>
-                    <div class="price__table">
-                        <div class="price__row">
-                            <p>Замена программного обеспечяения</p>
-                            <p>1000 р</p>
-                            <p>30-120 мин</p>
-                            <div class="price__button">
-                                <span>Заказать</span>
-                                <img src="./img/arrowRight.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="price__infoBlock">
-                    <div class="price__infoBlock_wrapper">
-                        <p>Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
-                        <a href="#">
-                            <span>Получить комерческое предложение</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer>
-            <div class="footer">
-                <div class="footer__oneBlock copyright">
-                    <span>&copy; 2019 CPS</span>
-                    <span>Разработано командой Apesong</span>
-                </div>
-                <div class="footer__oneBlock"><span>Политика конфиденциальности</span></div>
-                <div class="footer__oneBlock">
-                    <span>Информация размещенная на данной сьтранице не является публичной афертой</span>
-                </div>
-            </div>
-        </footer>
-        <!-- end price blocks -->
-    </main>
+    </div>
+    
 
     <script src="./js/swiper.js"></script>
     <script src="./js/main.js"></script>
