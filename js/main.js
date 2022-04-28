@@ -159,15 +159,17 @@ menuClose.addEventListener('click', ()=>{
 })
 
 document.addEventListener('click', (e) => {
-    if(!e.target.closest('.menu') && !e.target.closest('.menu__open')){
+    if(!e.target.closest('.menu') && !e.target.closest('.menu__open') && e.target.closest('.wrapper')){
         menu.classList.remove('menu__open')
         wrapper.classList.remove('body_close');
     }
-    if(!e.target.closest('.modalFeedBack') && !e.target.closest('.menu__oneIcon')){
+    if(!e.target.closest('.modalFeedBack') && !e.target.closest('.menu__oneIcon') && e.target.closest('.wrapper')){
         modalFeedBack.classList.remove('modalFeedBack__active')
+        wrapper.classList.remove('body_close');
     }
-    if(!e.target.closest('.modalCall') && !e.target.closest('.menu__oneIcon')){
+    if(!e.target.closest('.modalCall') && !e.target.closest('.menu__oneIcon') && e.target.closest('.wrapper')){
         modalCall.classList.remove('modalCall__active')
+        wrapper.classList.remove('body_close');
     }
 })
 
