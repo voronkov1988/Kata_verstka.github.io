@@ -162,12 +162,15 @@ document.addEventListener('click', (e) => {
     if(!e.target.closest('.menu') && !e.target.closest('.menu__open') && e.target.closest('.wrapper')){
         menu.classList.remove('menu__open')
         wrapper.classList.remove('body_close');
+        menu.classList.remove('menu_blur')
     }
     if(!e.target.closest('.modalFeedBack') && !e.target.closest('.menu__oneIcon') && e.target.closest('.wrapper')){
         modalFeedBack.classList.remove('modalFeedBack__active')
+        menu.classList.remove('menu_blur')
     }
     if(!e.target.closest('.modalCall') && !e.target.closest('.menu__oneIcon') && e.target.closest('.wrapper')){
         modalCall.classList.remove('modalCall__active')
+        menu.classList.remove('menu_blur')
     }
 })
 
@@ -185,7 +188,6 @@ closeButtonTech.addEventListener('click', ()=>{
     readButtonTech.style.display = 'flex'
     closeButtonTech.style.display = 'none'
 })
-//доделать!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 mainButtonRead.addEventListener('click', ()=> {
     const mainLaptop = document.querySelector('.main__laptop')
@@ -207,6 +209,7 @@ menuAllIcons.forEach(item => {
     item.addEventListener('click', ()=> {
         menu.classList.remove('menu__open')
         wrapper.classList.remove('body_close');
+        menu.classList.remove('menu_blur')
     })
 })
 
@@ -218,6 +221,7 @@ const orderCall = document.querySelector('.order_call')
 sendMesage.addEventListener('click', () => {
     modalFeedBack.classList.add('modalFeedBack__active')
     wrapper.classList.add('body_close');
+    menu.classList.add('menu_blur')
 
 })
 modalFeedBackClose.forEach(item => {
@@ -225,10 +229,12 @@ modalFeedBackClose.forEach(item => {
         modalFeedBack.classList.remove('modalFeedBack__active')
         modalCall.classList.remove('modalCall__active')
         wrapper.classList.remove('body_close');
+        menu.classList.remove('menu_blur')
     })
 })
 
 orderCall.addEventListener('click', () => {
     modalCall.classList.add('modalCall__active')
     wrapper.classList.add('body_close');
+    menu.classList.add('menu_blur')
 })

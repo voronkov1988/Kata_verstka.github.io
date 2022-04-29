@@ -59,6 +59,8 @@ body {
     filter: blur(5px);
     position: fixed;
     -webkit-filter: blur(5px);
+    background-color: hsla(0,0%,100%,.96);
+    
 }
 
 h2 {
@@ -385,6 +387,11 @@ h2 {
     -moz-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
     -o-transform: translateX(-100%);
+}
+.menu_blur {
+    filter: blur(5px);
+    overflow-y: hidden;
+    -webkit-filter: blur(5px);
 }
 
 .menu__open {
@@ -888,6 +895,9 @@ a {
 .modalFeedBack__wrapper {
     width: 90%;
     margin-left: 5%;
+}
+.modal_info {
+    font-weight: 100;
 }
 
 input,
