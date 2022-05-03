@@ -1238,6 +1238,7 @@ textarea:focus {
         border-radius: 20px;
         height: 32px;
         font-size: 12px;
+        font-weight: normal;
         cursor: pointer;
         font-family: 'TT Lakes Bold';
         text-transform: uppercase;
